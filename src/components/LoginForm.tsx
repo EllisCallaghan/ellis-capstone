@@ -59,7 +59,7 @@ export default function LoginForm() {
           autoComplete="off"
         />
         {errors?.password && <p className="text-red-400 text-sm pb-2">{errors?.password?.message}</p>}
-        <Button type="submit" mb="3" size="3">
+        <Button type="submit" mb="3" size="3" variant="solid">
           Sign In
         </Button>
       </form>
