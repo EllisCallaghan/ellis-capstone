@@ -28,7 +28,7 @@ export default function ProjectCard({id, title, description}: Props) {
       <div className="flex justify-between items-center">
         <div className="flex items-center">
           <span className="inline-flex w-10 h-10 mr-3 justify-center items-center">
-            <Link href={`/projects/${encodeURIComponent(id)}`}>
+            <Link href={`/projects/${encodeURIComponent(id)}`} className="no-underline">
               <FileText />
             </Link>
           </span>
@@ -36,7 +36,7 @@ export default function ProjectCard({id, title, description}: Props) {
             <Link className="underline" href={`/projects/${encodeURIComponent(id)}`}>
               <Heading size="3">{title}</Heading>
             </Link>
-            <Link href={`/projects/${encodeURIComponent(id)}`}>
+            <Link className="no-underline" href={`/projects/${encodeURIComponent(id)}`}>
               <Text color="gray">{description}</Text>
             </Link>
           </div>
